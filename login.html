@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <h2>Login</h2>
+        <form method="post" action="Login.php"> 
+            
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" name="Email" required placeholder="Enter your Email"><br>
+            <label for="UserPassword">Password: </label><br>
+            <input type="password" name="UserPassword" id="UserPassword" required placeholder="Enter your password"><br><br>
+            <select name="UserRole" id="UserRole" required>
+                <option value="" selected hidden >User</option>
+                <option value="patient">patient</option>
+                <option value="doctor">doctor</option>
+                <option value="pharmacy">pharmacy</option>
+                <option value="Admin">Admin </option>
+                <option value="pharmaceutical company">pharmaceutical company </option> 
+                <option value="supervisor">supervisor </option>
+
+
+            </select><br>
+            <input type="submit" value="login">
+        </form>
+
+</html>
