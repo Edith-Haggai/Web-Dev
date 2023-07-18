@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+    </head>
+    <body>
+        <h2>patient_signup</h2>
+        <form method="post" action="patient_signup.php">
+            <label for="SSN">Social Security Number:</label><br>
+            <input type="text" id="SSN" name="SSN" required placeholder="Enter your SSN"><br>
+            <label for="F_Name">First Name: </label><br>
+            <input type="text" id="F_Name" name="F_Name" required placeholder="Enter your first name"><br>
+            <label for="L_Name"> Surname: </label><br>
+            <input type="text" id="L_Name" name="L_Name" required placeholder="Enter your surname"><br>
+            <label for="Gender">Gender:</label><br>
+            <select name="Gender" id="Gender" required>
+                <option value="" selected hidden >Choose Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-binary">Non-binary</option>
+            </select><br>
+            <label for="CountryCode">Phone Number:</label><br>
+            <select name="CountryCode" id="CountryCode" required>
+                <option value="" selected hidden >Choose Code</option>
+                <option >+232</option>
+                <option >+254</option>
+                <option >+002</option>
+                <option >+499</option>
+                <option >+86</option>
+            </select><br>
+
+            <input type="text" name="PatientPhone" id="PatientPhone" required placeholder="Enter your phone number"><br>
+            <label for="PatientAddress">Address:</label><br>
+            <input type="text" name="PatientAddress" id="PatientAddress" required placeholder="Enter your address"><br>
+            <label for="DateOfBirth">Date of birth: </label><br>
+            <input type="date" name="DateOfBirth" id="DateOfBirth" required><br>
+            <label for="HeightinCm">Height (in centimetres):</label><br>
+            <input type="text" id="HeightinCm" name="HeightinCm" placeholder="Enter your height" required><br>
+            <label for="WeightinKg">Weight (in kilograms):</label><br>
+            <input type="text" id="WeightinKg" name="WeightinKg" placeholder="Enter your weight" required><br>
+            <label for="Allergies">Allergies:</label><br>
+            <textarea name="Allergies" id="Allergies" cols="30" rows="10"></textarea><br>
+            <label for="Email">Email: </label><br>
+            <input type="Email" name="Email" id="Email" required placeholder="Enter your E-mail"><br><br>
+            <label for="UserPassword">Password: </label><br>
+            <input type="password" name="UserPassword" id="UserPassword" required placeholder="Enter your password"><br><br>
+            <label for="UserRole">user:</label><br>
+            <select name="UserRole" id="UserRole" required>
+                <option value="" selected hidden >Choose user</option>
+                <option value="patient">patient</option>
+                <option value="doctor">doctor</option>
+                <option value="Admin">Admin</option>
+                <option value="supervisor">supervisor</option>
+            </select><br>
+            <input type="submit" value="Sign Up">
+        </form>
+
+    </body>
+    </body> 
+</html>
