@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html><!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+    </head>
+    <body>
+        <h2>Drugs</h2>
+        <form method="post" action="add_drugs.php">
+            <label for="drug_ID">drug ID:</label>
+            <input type="text" id="drug_ID" name="drug_ID" required placeholder="Enter drug ID"><br>
+            <label for="drug_name">drug name: </label>
+            <input type="text" id="drug_name" name="drug_name" required placeholder="Enter drug name"><br>
+            <label for="drug_type">drug category:</label>
+            <select name="drug_type" id="drug_type" required>
+                <option value="" selected hidden >Choose category</option>
+                <option >painkiller</option>
+                <option >antibiotic</option>
+                <option >eye care</option>
+                <option >oral care</option>
+                <option >bacterieal infections</option>
+                <option >vitamins and supplements</option>
+                <option >first aid</option>
+                <option >influenza</option>
+            </select><br>
+            <label for="description">Drug description:</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+            <label for="drug_price">drug price: </label>
+            <input type="text" id="drug_price" name="drug_price" required placeholder="Enter drug price"><br>
+            <input type="submit" value="ADD">
+        </form>
+
+    </body>
+    </body> 
+</html>
+    
+</html>
